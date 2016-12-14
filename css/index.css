@@ -1,0 +1,197 @@
+
+#container{
+	width: 1349px;
+	height: 100%;
+	margin: 0 auto;
+}
+/*-------------头部开始。。*/
+
+
+
+/*-----------------------内容部分  */
+#content{
+	width: 1349px;
+	height: 100%;
+}
+		/*特色服务部分------*/
+#myService{
+	width: 1349px;
+	height: 535px;
+	background-color: #f2f2f2;
+}
+.myServ_cnt{
+	width: 1349px;
+	overflow: hidden;
+	/*border:1px solid rgba(0, 0, 0, 0);*/
+}
+.myServ_cnt h3{
+	width:110px;
+	margin:70px auto 0;
+	font-size: 24px;
+	color: #585858;
+	letter-spacing: 2px;
+}
+.myServ_cnt hr{
+	width: 70px;
+	border-top: 4px solid #f39c12;
+	margin: 20px auto 20px;
+}
+.myServ_cnt p{
+	width: 800px;
+	margin: 0 auto;
+	color: #919191;
+	font-size: 14px;
+	text-align: center;
+	line-height: 25px;
+}
+.myServ_cnt a{
+	text-decoration: none;
+	color: #f39c12;
+}
+#myService ul{
+	width: 1160px;
+	height: 230px;
+	margin: 55px auto;
+}
+#myService ul li{
+	float: left;
+	list-style-type: none;
+	width: 360px;
+	height: 230px;
+	margin-left: 40px;
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+#myService ul li:nth-of-type(1){
+	margin-left: 0px;
+}
+.myServ_item{
+	width: 110px;
+	height: 110px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+#myService ul li h4{
+	color: #585858;
+	margin-top:20px ;
+}
+#myService ul li p{
+	width: 340px;
+	margin: 15px auto 0;
+	font-size: 14px;
+	text-align: center;
+	color: #919191;
+}
+
+		/*最近的作品部分------*/
+#recentWorks{
+	width: 1349px;
+	height: 880px;
+}
+
+/*#recentWorks ul li span{*/
+	/*display: inline-block;*/
+	/*width: 360px;*/
+	/*height: 240px;*/
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*background-color: rgba(242, 166, 42, 0.7);*/
+	/*transition: all linear .25s;*/
+	/*opacity: 0;*/
+	/*cursor: zoom-in;*/
+/*}*/
+/*#recentWorks ul li:hover span{*/
+	/*transition: all linear .25s;*/
+	/*opacity: 1;*/
+/*}*/
+
+
+
+
+
+
+		/*客户所说部分-------*/
+#clientSay{
+	width: 1349px;
+	height: 476px;
+	background-image:url('../img/item9.jpg');
+	background-size: cover;
+	position: relative;
+}
+#clientSay_ban{
+	width: 800px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#clientSay ul{
+	width: 3000px;
+}
+#clientSay ul li{
+	float: left;
+	list-style-type: none;
+	width: 800px;
+	margin-right: 50px;
+	font-size: 14px;
+	text-align: center;
+}
+.clientSay_h3{
+	color: #ffffff!important;
+}
+.clientSay_p1{
+	margin-top:80px!important ;
+	color: #ffffff!important;
+}
+.clientSay_p2{
+	margin-top:30px!important ;
+	color: #ffffff!important;
+}
+.clientSay_bg{
+	width: 1349px;
+	height: 476px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.55);
+}
+.clientSay_btn{
+	float: left;
+	height: 12px;
+	width: 81px;
+	margin: 15px 350px;
+}
+.clientSay_ban_btn{
+	height: 12px;
+	width: 12px;
+	float: left;
+	margin-left: 15px; ;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #bbbbbb;
+}
+
+
+		/*一起讨论部分--------*/
+#discuss_cnt{
+	height: 330px;
+	width: 1349px;
+}
+.discuss_cnt_h3{
+	width: 158px!important;
+}
+.discuss_btn{
+	width: 110px;
+	height: 36px;
+	border-radius: 5px;
+	margin: 30px auto;
+	background-color: #fca213;
+	color: #ffffff;
+	text-align: center;
+	line-height: 36px;
+	cursor: pointer;
+	transition: all linear .25s;
+}
+.discuss_btn:hover{
+	transition: all linear .25s;
+	background-color: #d48810;
+}
+
+

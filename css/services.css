@@ -1,0 +1,24 @@
+
+#cotainer{
+    width: 1349px;
+    height: 100%;
+}
+
+    /*--------我们的服务部分 */
+#ourServices{
+    width: 1349px;
+    height: 250px;
+    border-top:1px solid rgba(0, 0, 0, 0);
+    background-color: rgb(238, 238, 238);
+}
+#services_Map{
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+    /*---------一起出发部分*/
+#letGo{
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    width: 1349px;
+}

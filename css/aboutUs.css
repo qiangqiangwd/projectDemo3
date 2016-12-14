@@ -1,0 +1,79 @@
+
+#container{
+    width: 1349px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*内容部分开始----------------*/
+#content{
+    width: 1349px;
+    height: 100%;
+}
+    /*----关于我们部分*/
+#aboueUs_cnt{
+    width: 1349px;
+    height: 250px;
+    border-top:1px solid rgba(0, 0, 0, 0);
+    background-color: rgb(238, 238, 238);
+}
+
+
+    /*杂七杂八部分------*/
+#MyInt_cnt{
+    width: 1349px;
+    height: 400px;
+    background-color: #fdfdfd;
+    border-top:1px solid rgba(0, 0, 0, 0);
+}
+#myIntroduce{
+    width: 1140px;
+    height: 300px;
+    margin: 50px auto;
+    /*border: 1px solid black;*/
+}
+#myIntroduce>div{
+    float: left;
+    width: 378px;
+    height: 300px;
+    /*border: 1px solid black;*/
+}
+#myIntroduce h4{
+    font-size: 18px;
+    color: #454545;
+    margin: 0 0 25px 29px;
+}
+#myIntroduce p{
+    width: 320px;
+    margin: 0 auto 10px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #606060;
+}
+
+
+
+    /*创建一个计划部分*/
+#discuss_cnt{
+    width: 1349px;
+    height: 300px;
+    border-top:1px solid rgba(0, 0, 0, 0);
+}
+
+    /*一个计划按钮--------*/
+.discuss_btn{
+    width: 110px;
+    height: 36px;
+    border-radius: 5px;
+    margin: 50px auto;
+    background-color: #fca213;
+    color: #ffffff;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    transition: all linear .25s;
+}
+.discuss_btn:hover{
+    transition: all linear .25s;
+    background-color: #d48810;
+}

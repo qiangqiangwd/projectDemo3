@@ -1,0 +1,201 @@
+
+#container{
+    width: 1349px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*内容部分*/
+/*我们的作品集部分--------*/
+#ourProtfolio{
+    width: 1349px;
+    height: 250px;
+    background-color: #eeeeee;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+}
+
+
+/*参与投稿部分-----*/
+#gieProt_cnt{
+    width: 1349px;
+    height: 300px;
+    background-color: #eeeeee;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+}
+
+
+/*作品展示部分--------*/
+#showProtfolio{
+    width: 1349px;
+    height: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+}
+.protfolioBtn ul{
+    height: 34px;
+    width: 338px;
+    margin: 30px auto;
+    /*overflow: hidden;*/
+}
+.protfolioBtn ul li{
+    float: left;
+    list-style-type: none;
+    height: 34px;
+    padding:0 10px;
+    border-radius: 3px;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+    margin-left: 25px;
+    cursor: pointer;
+    color: #6a6a6a;
+    position: relative;
+    transition: all linear .25s;
+}
+.protfolioBtn ul li:nth-of-type(1){
+    margin-left: 0px;
+
+
+}
+.liBgColor{
+    color: #ffffff!important;
+    background-color: #F39D14!important;
+}
+.protfolioBtn ul li:hover{
+    transition: all linear .25s;
+    background-color: rgb(243, 157, 20);
+    color: #ffffff;
+}
+#protfolio_img ul{
+    width: 1170px;
+    overflow: hidden;
+    margin: 50px auto;
+    /*border: 1px solid black;*/
+    /*position: relative;*/
+}
+#protfolio_img ul li{
+    float: left;
+    list-style-type: none;
+    width: 390px;
+    height: 270px;
+    text-align: center;
+    line-height: 270px;
+    position: relative;
+}
+#protfolio_img ul li img{
+    margin-top:15px;
+}
+
+
+#protfolio_img ul li span{
+    display: inline-block;
+    width:0px;
+    height: 240px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(243, 157, 20, 0.8);
+    transition: all linear .25s;
+}
+
+/*#protfolio_img ul li:hover span{*/
+    /*transition: all linear .25s;*/
+    /*width: 360px;*/
+/*}*/
+
+/*覆盖区*/
+/*.Top,.Down,.Left,.Right{*/
+    /*position: absolute;*/
+    /*border: 1px solid black;*/
+/*}*/
+/*.Top,.Down{*/
+    /*width:390px;*/
+    /*height: 15px;*/
+    /*left: 0px;*/
+/*}*/
+/*.Top{*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*z-index: 60;*/
+    /*position: absolute;*/
+    /*border: 1px solid black;*/
+/*}*/
+/*.Down{*/
+    /*top: 255px;*/
+/*}*/
+/*.Left,.Right{*/
+    /*width: 15px;*/
+    /*height: 240px;*/
+    /*top: 15px;*/
+/*}*/
+/*.Right{*/
+    /*left: 375px;*/
+/*}*/
+
+
+
+
+
+
+/*------所需的动画区域----------*/
+/*向右出现*/
+@-webkit-keyframes spanMoveToR{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 360px;
+    }
+ }
+.spanMoveToR{
+    -webkit-animation:spanMoveToR .25s linear forwards;
+}
+/*向右消失*/
+@-webkit-keyframes spanMoveOutR{
+    from{
+        left:15px;
+        width: 360px;
+    }
+    to{
+        left:376px;
+        width: 0px;
+
+    }
+}
+.spanMoveOutR{
+    -webkit-animation:spanMoveOutR .25s linear forwards;
+}
+
+/*向左出现*/
+@-webkit-keyframes spanMoveToL{
+    from{
+        left: 376px;
+        width: 0px;
+    }
+    to{
+        left: 15px;
+        width: 360px;
+    }
+}
+.spanMoveToL{
+    -webkit-animation:spanMoveToL .25s linear forwards;
+}
+/*向左消失*/
+@-webkit-keyframes spanMoveOutL{
+    from{
+        /*left: 376px;*/
+        width: 360px;
+    }
+    to{
+        /*left: 15px;*/
+        width: 0px;
+    }
+}
+.spanMoveOutL{
+    -webkit-animation:spanMoveOutL .25s linear forwards;
+}
+
+
+/*#protfolio_img ul li:hover span{*/
+    /*width: 360px;*/
+    /*transition: all linear .5s;*/
+/*}*/

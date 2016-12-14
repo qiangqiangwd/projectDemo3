@@ -1,0 +1,125 @@
+
+#recentWorks ul{
+    width: 1170px;
+    height:510px ;
+    /*position: relative;*/
+    margin: 50px auto;
+    /*以下为禁止选中*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#recentWorks ul li{
+    float: left;
+    width: 360px;
+    height: 240px;
+    margin: 30px 0 0 30px;
+    list-style-type: none;
+    cursor: zoom-in;
+}
+#recentWorks ul li:nth-of-type(1){
+    margin: 30px 0 0 0px;
+}
+#recentWorks ul li:nth-of-type(4){
+    margin: 30px 0 0 0px;
+}
+#showBigImg_L,#showBigImg_R,#showBigImg_C{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all linear .25s;
+}
+#rWorksBigImg{
+    width: 1349px;
+    height: 640px;
+    text-align: center;
+}
+#showBigImg_L{
+    top: 50%;
+    font-size: 36px;
+    cursor: pointer;
+    color: #ffffff;
+}
+#showBigImg_L:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: all linear .25s;
+}
+#showBigImg_R{
+    top: 50%;
+    right: 0px;
+    font-size: 36px;
+    color: #ffffff;
+    cursor: pointer;
+}
+#showBigImg_R:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: all linear .25s;
+}
+#showBigImg_C{
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+    cursor: pointer;
+    color: #ffffff;
+}
+#showBigImg_C:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: all linear .25s;
+}
+.imgStyle{
+    width: 360px;
+    height: 240px;
+}
+.showBigImg1{
+    cursor: zoom-out;
+}
+#showBigImg{
+    width: 1366px;
+    height: 640px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    display: none;
+}
+/*出现时的效果*/
+@-webkit-keyframes imgMove1 {
+    from{
+        transform: scale(.5);
+        opacity: 0;
+    }to{
+             transform: scale(1);
+             opacity: 1;
+         }
+ }
+.imgMove1{
+    -webkit-animation:imgMove1 .1s linear forwards;
+}
+/*关闭时的效果*/
+@-webkit-keyframes imgMove2 {
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }to{
+         transform: scale(0);
+         opacity: 0;
+     }
+}
+.imgMove2{
+    -webkit-animation:imgMove2 .25s linear forwards;
+}
+
+.stopScroll{
+    overflow: hidden;
+}
+
+.showBigImg_inImg{
+    position: absolute;
+    /*left:23%;*/
+    left:50%;
+    top: 50%;
+}

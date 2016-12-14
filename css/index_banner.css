@@ -1,0 +1,152 @@
+
+/*轮播部分-------*/
+#banner{
+    height: 470px;
+    width: 1349px;
+    overflow: hidden;
+    position: relative;
+}
+#banner_Top,#banner_Down{
+    position: absolute;
+}
+#banner_cnt{
+    /*width: 1349px;*/
+    position: absolute;
+    top: 500px;
+    left: 450px;
+    color: #ffffff;
+    z-index: 3;
+}
+#banner_cnt h3{
+    font-size: 60px;
+}
+#banner_cnt p{
+    font-size: 24px;
+}
+.banner_btn{
+    width: 145px;
+    height: 40px;
+    margin: 45px auto;
+    border-radius: 5px;
+    background-color: rgba(252, 162, 19, 0.5);
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+#btn_left{
+    width: 55px;
+    height: 66px;
+    background-color: rgba(0, 0, 0, 0.63);
+    position: absolute;
+    top: 45%;
+    left: 0;
+    z-index: 5;
+    cursor: pointer;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 66px;
+}
+#btn_right{
+    width: 55px;
+    height: 66px;
+    background-color: rgba(0, 0, 0, 0.63);
+    top: 45%;
+    right: 0;
+    z-index: 5;
+    cursor: pointer;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 66px;
+    position: absolute;
+}
+
+
+
+/*点击左键和平时的轮播运动*/
+@-webkit-keyframes myMove1{
+     from{
+         left:0;
+     }to{
+          left:-1349px;
+      }
+ }
+.banner_Move{
+    -webkit-animation:myMove1 .5s linear 1 forwards ;
+}
+
+@-webkit-keyframes myMove2{
+    from{
+        left:1349px;
+    }to{
+         left:0px;
+     }
+}
+.banner_Move1{
+    -webkit-animation:myMove2 .5s linear 1 forwards ;
+}
+
+/*点击右键的轮播运动*/
+@-webkit-keyframes myMove3{
+    from{
+        left:-1349px;
+    }to{
+         left:0px;
+     }
+}
+.banner_Move2{
+    -webkit-animation:myMove3 .5s linear 1 forwards ;
+}
+@-webkit-keyframes myMove4{
+    from{
+        left:0px;
+    }to{
+         left:1349px;
+     }
+}
+.banner_Move3{
+    -webkit-animation:myMove4 .5s linear 1 forwards ;
+}
+
+/*字体的轮播运动*/
+    /*上运动*/
+@-webkit-keyframes myMove5{
+    from{
+        top:500px;
+        opacity: 0;
+    }to{
+         top:150px;
+         opacity: 1;
+     }
+}
+.banner_Move4{
+    -webkit-animation:myMove5 .5s linear 1 forwards ;
+}
+
+        /*下运动*/
+@-webkit-keyframes myMove6{
+     from{
+         top:150px;
+         opacity: 1;
+     }to{
+          top:500px;
+          opacity: 0;
+      }
+ }
+.banner_Move5{
+    -webkit-animation:myMove6 .5s linear 1 forwards ;
+}
+/*消失+下降*/
+@-webkit-keyframes myMove7{
+    from{
+        /*top:150px;*/
+        opacity: 1;
+    }to{
+        opacity: 0;
+         /*top:500px;*/
+     }
+}
+.banner_Move6{
+    -webkit-animation:myMove7 .5s linear 1 forwards ;
+}
